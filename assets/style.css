@@ -1,6 +1,5 @@
 * {
-    margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
 }
 body {
@@ -44,7 +43,7 @@ section {
 }
 .hero {
     box-sizing: border-box;
-    background-image: url("../images/grizzly-gulch.jpg");
+   
     align-items: flex-start;
     background-size: cover;
     background-position: center;
