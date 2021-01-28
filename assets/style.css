@@ -3,18 +3,23 @@
     box-sizing: border-box;
 }
 body {
-    
-   color: #000000;
-   font-family: Helvetica, Arial, sans-serif;
-  
-}
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: Black;
+    background-color: rgb(231, 230, 230);
+    line-height: 1.5;
+  }
 header {
     
+    
     padding: 20px 35px;
-    background-color: #a5bae0;
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 header a {
     text-decoration: none;
@@ -52,4 +57,18 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+    .hero-banner {
+       
+        background-image: url("../assets/images/blanche.jpg");
+        background-size: cover;
+        background-position: top 20% right 75%;
+        background-blend-mode: soft-light;
+        min-height: 50vh;
+        color: rgb(152, 186, 218);
+        padding: 2% 6%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
 }
