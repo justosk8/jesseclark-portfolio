@@ -1,5 +1,4 @@
 * {
-   
     box-sizing: border-box;
 }
 body {
@@ -7,7 +6,6 @@ body {
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: Black;
-    
     line-height: 1.5;
     background-image: linear-gradient(to bottom right, #8ab2b9, #ffd194);
   }
@@ -15,16 +13,12 @@ body {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
   }
 header {
- 
-    
     padding: 20px 35px;
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
 }
 header a {
     text-decoration: none;
@@ -39,7 +33,6 @@ header h1 {
     line-height: 1;
     text-decoration: none;
 }
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +52,6 @@ nav a {
     padding: 5px 10px;
     color: var(--secondary);
     margin-right: 10px;
-    
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: bottom;
@@ -81,15 +73,14 @@ section {
   background-position: top 40% right 75%;
   background-blend-mode: soft-light;
   min-height: 60vh;
-  border: 2px solid #667292;
+  border-bottom: 2px solid #667292;
+  border-top: 2px solid #667292;
   padding: 2% 6%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
 }
-
-  
   .page-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -111,26 +102,21 @@ section {
     border-right: 4px solid var(--primary);
     font-size: 2.5vw;
     line-height: 1.1;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
   }
   .page-section > div {
     flex: 0 0 77%;
   }
-  
   .page-section p {
     margin-bottom: 20px;
   }
- 
   .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
   .flex-item {
-    border: 5px solid #667292;
-    
-    color: var(--tertiary);
+    border: 2px solid #667292;;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -143,27 +129,30 @@ section {
     background-size: 150%;
     transition: all 0.5s;
     font-size: 0.9rem;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }  
+  .flex-item h3 {
+    border-bottom: 2px solid;
+  }
   .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
 }
 .flex-item:hover {
   background-color: rgba(0, 0, 0, 0.3)
-
 }
 .page-section address {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  
+  align-items: flex-start;  
 }
 .page-section address a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   padding: 5px 10px;
-  color: var(--secondary);
   margin-right: 10px;
+  color: var(--secondary);
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
@@ -173,7 +162,6 @@ section {
 }
 .page-section address a:hover {
     background: #667292;
-    
     border-radius: 15px;
     text-shadow: none;
     }
@@ -186,12 +174,13 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid;
   } 
   footer address a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--secondary);
+    color: black;
     margin-right: 10px;
     justify-content: flex-end;
     background-repeat: no-repeat;
@@ -200,14 +189,29 @@ section {
     transition: all 0.25s ease-in;
     font-size: 1.4rem;  
   } 
- 
-  
+  footer address a:hover {
+    background: #667292;
+    border-radius: 15px;
+    text-shadow: none; 
+  }
   footer img {
-    
     width: 270px;
     height: 202.5px;
   }
-
   .run-buddy {
     background-image: url("../assets/images/02-run-buddy.jpg");
+  }
+  .tbd {
+    background-image: url("../assets/images/wireframe.jpg");
+    background-position: center;
+  }
+  .cannot-wait {
+    background-image: url("../assets/images/raindrops.jpg");
+  }
+  .react-calc {
+    background-image: url("../assets/images/calculator.jpg");
+    background-position: center;
+  }
+  .aap {
+    background-image: url("../assets/images/puzzle.jpg");
   }
