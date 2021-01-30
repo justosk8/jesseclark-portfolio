@@ -50,7 +50,7 @@ nav a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     padding: 5px 10px;
-    color: var(--secondary);
+    color: black;
     margin-right: 10px;
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
@@ -73,8 +73,8 @@ section {
   background-position: top 40% right 75%;
   background-blend-mode: soft-light;
   min-height: 60vh;
-  border-bottom: 2px solid #667292;
-  border-top: 2px solid #667292;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
   padding: 2% 6%;
   display: flex;
   justify-content: flex-end;
@@ -116,7 +116,7 @@ section {
     justify-content: center;
   }
   .flex-item {
-    border: 2px solid #667292;;
+    border: 1px solid black;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -152,7 +152,7 @@ section {
   text-decoration: none;
   padding: 5px 10px;
   margin-right: 10px;
-  color: var(--secondary);
+  
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
@@ -214,4 +214,57 @@ section {
   }
   .aap {
     background-image: url("../assets/images/puzzle.jpg");
+  }
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
