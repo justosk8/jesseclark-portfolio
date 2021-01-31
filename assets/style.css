@@ -12,6 +12,7 @@ body {
   h2 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  
   }
+  /* header styles */
 header {
     padding: 20px 35px;
     display: flex;
@@ -67,6 +68,7 @@ nav a {
 section {
     padding: 60px;
 }
+/* hero styles */
 .hero-banner {
   background-image: url("../assets/images/sunset.jpg");
   background-size: cover;
@@ -81,6 +83,7 @@ section {
   align-items: flex-end;
   text-align: right;
 }
+/* main content styles */
   .page-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -198,6 +201,7 @@ section {
     width: 270px;
     height: 202.5px;
   }
+  /* background images start */
   .run-buddy {
     background-image: url("../assets/images/02-run-buddy.jpg");
   }
@@ -215,6 +219,7 @@ section {
   .aap {
     background-image: url("../assets/images/puzzle.jpg");
   }
+  /* media queries start */
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
